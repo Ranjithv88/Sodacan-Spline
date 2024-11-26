@@ -1,11 +1,10 @@
-/*********** Sodacan-Spline Website Styles Property ************/
+/*********** Spline-SodaCan Website Styles Property ************/
 
 /*********** All Element ************/
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
     ul{
         list-style: none;
         a{
@@ -18,173 +17,84 @@
 /*********** Fonts (Pacifico, BebasNeue) ************/
 @font-face {
     font-family: 'Pacifico';
-    src: url('./fonts/Pacifico.ttf');
-}
-@font-face {
-    font-family: 'BebasNeue';
-    src: url('./fonts/BebasNeue.ttf');
+    src: url('./assets/Pacifico.ttf');
 }
 
 /*********** Content Element ************/
 body{
-    background-color: rgba(175, 23, 64, 1);
-    color: rgba(255, 255, 255, 1);
-    header{
-        background-color: rgba(175, 23, 64, 1);
-        z-index: 2;
-        position: fixed;
-        height: 8vh;
-        width: 100vw;
+    display: flex;
+    padding: 2vh;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(30, 30, 30, 1);
+    background-color: rgba(205, 205, 205, 1);
+    background-image:
+    repeating-linear-gradient(
+        to right, transparent 0 150px, rgba(0, 0, 0, 0.067) 150px 151px
+    ),
+    repeating-linear-gradient(
+        to bottom, transparent 0 150px, rgba(0, 0, 0, 0.067) 150px 151px
+    ),
+    linear-gradient(to right, rgba(205, 205, 205, 0.8), rgba(205, 205, 205, 0.8)),
+    url('./assets/Background-Image.jpg');
+    nav{
+        height: 96vh;
+        width: 18vw;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.16);
-        nav{
-            width: 90vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            h1{
-                font-size: 28px;
-                font-weight: 800;
+        .one{
+            h1{  
+                text-align: center;
                 font-family: "Pacifico", cursive;
+                font-weight: 800;
                 cursor: default;
                 text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
             }
-            ul{
-                display: inherit;
+            h4{
+                font-family: cursive;
+                text-align: center;
+                cursor: default;
+            }
+            img{
+                height: 50%;
+                width: 100%;
+            }
+        }
+        .two{
+            h4{
+                font-family: cursive;
+                text-align: center;
+                cursor: default;
+            }
+            .inner{
+                display: flex;
                 flex-direction: row;
-                gap: 18px;
-                li{
-                    a{
-                        font-family: cursive;
-                        font-size: 18px;
-                        text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+                justify-content: space-between;
+                align-items: center;
+                gap: 1vh;
+                a{
+                    img{
+                        height: 20px;
+                        width: 20px;
+                    }
+                    img:hover{
+                        height: 25px;
+                        width: 25px;
                     }
                 }
             }
         }
     }
-    main{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        row-gap: 2vh;
-        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.16);
-        padding-bottom: 50px;
-        .Emply{
-            height: 8vh;
-            width: 100vw;
-        }
-        .Main01{
-            height: 80vh;
-            width: 90vw;
-            background-color: rgba(236, 240, 243, 1);
-            box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 1),
-                        inset 5px 5px 12px rgba(0, 0, 0, 0.16);
-            border-radius: 40px;
-        }
-        h1{
-            font-size: 38px;
-            font-weight: 800;
-            font-family: cursive;
-            padding: 10px 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-            cursor: default;
-        }
-        .Main02{
-            height: 100vh;
-            width: 90vw;
-            background-color: rgba(236, 240, 243, 1);
-            box-shadow: -5px -5px 12px rgba(255, 255, 255, 0.2),
-                       5px 5px 12px rgba(0, 0, 0, 0.4);
-            border-radius: 80px;
-        }
-    }
-    footer{
-        width: 100vw;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 100px 0px;
-        row-gap: 20px;
-        h1{
-            font-size: 38px;
-            font-weight: 800;
-            font-family: cursive;
-            padding: 10px 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-            cursor: default;
-        }
-        .footer{
-            place-items: center;
-            width: 95vw;
-            background-color: rgba(236, 240, 243, 1);
-            border-radius: 5px;
-            box-shadow: inset -10px -10px 60px rgba(255, 255, 255, 1),
-                    inset 10px 10px 60px rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            .Foot01{
-                width: 60vw;
-                h1{
-                    font-size: 50px;
-                    font-weight: 800;
-                    font-family: 'BebasNeue';
-                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-                    cursor: default;
-                    color: rgb(242, 243, 247);
-                }
-                p{
-                    color: rgba(0, 0, 0, 1);
-                    font-family: "Bokor", system-ui;
-                }
-            }
-            .Foot02{
-                width: 10vw;
-                h1{
-                    font-size: 28px;
-                    font-weight: 800;
-                    font-family: cursive;
-                    cursor: default;
-                    color: rgba(0, 0, 0, 1);
-                    text-shadow: none;
-                }
-                .fOuter{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .FInner{
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        align-items: center;
-                        justify-content: center;
-                        justify-items: center;
-                        background-color: rgba(175, 23, 64, 1);
-                        padding: 10px;
-                        border-radius: 20px;
-                        gap: 4px;
-                        box-shadow: -5px -5px 12px rgba(255, 255, 255, 1),
-                                5px 5px 12px rgba(0, 0, 0, 0.4);
-                        margin: 10px;
-                        transform: rotate(10deg);
-                        a{
-                            padding: 1px;
-                            img{
-                                height: 35px;
-                                width: 35px
-                            }
-                            img:hover{
-                                filter: drop-shadow(-5px -5px 12px rgba(255, 255, 255, 1));  
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .model{
+        height: 96vh;
+        width: 70vw;
+        background-color: rgba(236, 240, 243, 1);
+        box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.5),
+                    inset -5px -5px 12px rgba(0, 0, 0, 0.16);
+        border-radius: 40px;
+        overflow: hidden;
     }
 }
 
