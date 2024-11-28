@@ -70,7 +70,6 @@ body{
     .model{
         height: 78vh;
         width: 95vw;
-        background-color: rgba(236, 240, 243, 0.8);
         border-radius: 4px;
     }
     footer{
