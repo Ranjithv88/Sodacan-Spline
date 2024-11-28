@@ -1,6 +1,5 @@
 # Sodacan-Spline Website
-This project is a static website created using HTML, CSS, and Spline 3d Model Package. It is a simple soda Can 3d model sites.Spline is a free 3D design software with real-time collaboration to create web interactive experiences in the browser.
-t's simpler to learn than full featured 3D apps—such as Cinema 4D or Blender—because it doesn't bog you down with loads and loads of settings and features.
+This project is a static website created using HTML, CSS, and Spline 3d Model Package. It is a simple soda Can 3d model sites.Spline is a free 3D design software with real time collaboration to create web interactive experiences in the browser.it's simpler to learn than full featured 3D apps such as Cinema 4D or Blender because it doesn't bog you down with loads and loads of settings and features.
 
 ## WebSites 
 ### Live Demo : <https://ranjithv88.github.io/Sodacan-Spline/>
