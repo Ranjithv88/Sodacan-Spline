@@ -89,8 +89,8 @@ body{
     }
     .model{
         height: 96vh;
-        width: 70vw;
-        background-color: rgba(236, 240, 243, 1);
+        width: 80vw;
+        background-color: transparent;
         box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.5),
                     inset -5px -5px 12px rgba(0, 0, 0, 0.16);
         border-radius: 40px;
