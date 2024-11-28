@@ -50,7 +50,7 @@ body{
             font-family: "Pacifico", cursive;
             font-weight: 800;
             cursor: default;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         div{
             display: grid;
